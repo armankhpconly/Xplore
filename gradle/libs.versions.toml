@@ -1,0 +1,158 @@
+[versions]
+agp = "8.5.0"
+androidMapsUtils = "3.5.2"
+androidMapsUtilsVersion = "3.5.2"
+androidxAppcompat = "1.7.0"
+androidxJunit = "1.1.5"
+annotation = "1.8.0"
+appcompatVersion = "1.7.0"
+cardview = "1.0.0"
+comGoogleCloudGoogleCloudLanguage = "1.101.1"
+compiler = "4.13.0"
+constraintlayoutVersion = "2.1.4"
+espressoCoreVersion = "3.5.1"
+firebaseAuthVersion = "23.0.0"
+firebaseBom = "33.1.1"
+firebaseBomVersion = "32.7.0"
+firebaseFirestoreKtxVersion = "25.0.0"
+glide = "4.13.0"
+glideVersion = "4.13.0"
+googleAuthLibraryOauth2Http = "1.16.0"
+googleAuthLibraryOauth2HttpVersion = "1.16.0"
+googleCloudLanguage = "2.14.0"
+googleCloudLanguageVersion = "2.14.0"
+googleFirebaseBom = "32.2.3"
+googleFirebaseBomVersion = "30.0.0"
+googleGoogleAuthLibraryOauth2Http = "1.16.0"
+googleGoogleCloudLanguage = "2.14.0"
+googleGoogleCloudLanguageVersion = "2.1.2"
+googleMaterial = "1.12.0"
+googlePlayServicesMaps = "18.2.0"
+googleProtobufJava = "3.21.7"
+googleProtobufJavalite = "3.25.1"
+grpcOkhttp = "1.62.2"
+grpcProtobuf = "1.64.0"
+grpcStub = "1.64.0"
+kotlin = "1.9.0"
+coreKtx = "1.13.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.7.0"
+kotlinBom = "1.8.22"
+librariesBom = "26.42.0"
+lifecycleLivedataKtx = "2.8.2"
+maps = "3.1.0"
+material = "1.12.0"
+activity = "1.9.0"
+constraintlayout = "2.1.4"
+googleGmsGoogleServices = "4.4.2"
+firebaseAuth = "23.0.0"
+materialVersion = "1.12.0"
+playServicesLocation = "21.3.0"
+playServicesLocationVersion = "21.3.0"
+playServicesMaps = "18.2.0"
+playServicesMapsVersion = "22.0.1"
+playServicesPlacesVersion = "17.1.0"
+protobufGradlePlugin = "0.8.19"
+protobufJava = "3.23.4"
+protobufJavalite = "3.21.9"
+protobufJavaliteVersion = "3.0.0"
+protobufJavaVersion = "3.23.4"
+protobufLite = "3.0.1"
+protoGoogleCommonProtos = "2.17.0"
+protoGoogleCommonProtosVersion = "2.5.0"
+retrofit = "2.9.0"
+secretsGradlePlugin = "2.0.1"
+viewpager2 = "1.1.0"
+playServicesPlaces = "17.1.0"
+places = "3.5.0"
+material3Android = "1.2.1"
+recyclerview = "1.3.2"
+firebaseFirestoreKtx = "25.0.0"
+navigationFragmentKtx = "2.7.7"
+
+[libraries]
+android-maps-utils = { module = "com.google.maps.android:android-maps-utils", version.ref = "androidMapsUtils" }
+android-maps-utils-v223 = { module = "com.google.maps.android:android-maps-utils", version.ref = "androidMapsUtilsVersion" }
+androidx-annotation = { module = "androidx.annotation:annotation", version.ref = "annotation" }
+androidx-appcompat-v131 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-appcompat-v141 = { module = "androidx.appcompat:appcompat", version.ref = "androidxAppcompat" }
+androidx-cardview = { module = "androidx.cardview:cardview", version.ref = "cardview" }
+androidx-constraintlayout-v213 = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayoutVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-espresso-core-v340 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-junit-v113 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+androidx-lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+androidx-viewpager2 = { module = "androidx.viewpager2:viewpager2", version.ref = "viewpager2" }
+cloud-google-cloud-language-v212 = { module = "com.google.cloud:google-cloud-language", version.ref = "googleGoogleCloudLanguageVersion" }
+com-google-firebase-firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
+compiler-v4130 = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
+converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
+firebase-analytics = { module = "com.google.firebase:firebase-analytics" }
+firebase-auth-v2101 = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuthVersion" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+firebase-bom-v3000 = { module = "com.google.firebase:firebase-bom", version.ref = "googleFirebaseBomVersion" }
+firebase-bom-v3223 = { module = "com.google.firebase:firebase-bom", version.ref = "googleFirebaseBom" }
+firebase-bom-v3270 = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBomVersion" }
+firebase-firestore-ktx-v2401 = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebaseFirestoreKtxVersion" }
+glide = { module = "com.github.bumptech.glide:glide", version.ref = "glide" }
+glide-v4130 = { module = "com.github.bumptech.glide:glide", version.ref = "glideVersion" }
+google-auth-library-oauth2-http = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuthLibraryOauth2Http" }
+google-auth-library-oauth2-http-v110 = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleAuthLibraryOauth2HttpVersion" }
+google-auth-library-oauth2-http-v180 = { module = "com.google.auth:google-auth-library-oauth2-http", version.ref = "googleGoogleAuthLibraryOauth2Http" }
+google-cloud-language = { module = "com.google.cloud:google-cloud-language", version.ref = "googleCloudLanguage" }
+google-cloud-language-v11011 = { module = "com.google.cloud:google-cloud-language", version.ref = "comGoogleCloudGoogleCloudLanguage" }
+google-cloud-language-v211 = { module = "com.google.cloud:google-cloud-language", version.ref = "googleCloudLanguageVersion" }
+google-cloud-language-v212 = { module = "com.google.cloud:google-cloud-language", version.ref = "googleGoogleCloudLanguage" }
+google-firebase-firestore-ktx = { module = "com.google.firebase:firebase-firestore-ktx" }
+grpc-okhttp = { module = "io.grpc:grpc-okhttp", version.ref = "grpcOkhttp" }
+grpc-protobuf = { module = "io.grpc:grpc-protobuf", version.ref = "grpcProtobuf" }
+grpc-stub = { module = "io.grpc:grpc-stub", version.ref = "grpcStub" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlinBom" }
+libraries-bom = { module = "com.google.cloud:libraries-bom", version.ref = "librariesBom" }
+maps = { module = "com.google.maps.android:maps", version.ref = "maps" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+material-v140 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+material-v150 = { module = "com.google.android.material:material", version.ref = "googleMaterial" }
+play-services-location = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocation" }
+play-services-location-v1901 = { module = "com.google.android.gms:play-services-location", version.ref = "playServicesLocationVersion" }
+play-services-maps = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMaps" }
+play-services-maps-v1802 = { module = "com.google.android.gms:play-services-maps", version.ref = "googlePlayServicesMaps" }
+play-services-maps-v2201 = { module = "com.google.android.gms:play-services-maps", version.ref = "playServicesMapsVersion" }
+play-services-places-v1700 = { module = "com.google.android.gms:play-services-places", version.ref = "playServicesPlacesVersion" }
+proto-google-common-protos = { module = "com.google.api.grpc:proto-google-common-protos", version.ref = "protoGoogleCommonProtos" }
+proto-google-common-protos-v250 = { module = "com.google.api.grpc:proto-google-common-protos", version.ref = "protoGoogleCommonProtosVersion" }
+protobuf-gradle-plugin = { module = "com.google.protobuf:protobuf-gradle-plugin", version.ref = "protobufGradlePlugin" }
+protobuf-java = { module = "com.google.protobuf:protobuf-java", version.ref = "protobufJava" }
+protobuf-java-util = { module = "com.google.protobuf:protobuf-java-util", version.ref = "protobufJavaVersion" }
+protobuf-java-v3217 = { module = "com.google.protobuf:protobuf-java", version.ref = "googleProtobufJava" }
+protobuf-java-v3234 = { module = "com.google.protobuf:protobuf-java", version.ref = "protobufJavaVersion" }
+protobuf-javalite = { module = "com.google.protobuf:protobuf-javalite", version.ref = "protobufJava" }
+protobuf-javalite-v300 = { module = "com.google.protobuf:protobuf-javalite", version.ref = "protobufJavaliteVersion" }
+protobuf-javalite-v3219 = { module = "com.google.protobuf:protobuf-javalite", version.ref = "protobufJavalite" }
+protobuf-javalite-v3251 = { module = "com.google.protobuf:protobuf-javalite", version.ref = "googleProtobufJavalite" }
+protobuf-kotlin = { module = "com.google.protobuf:protobuf-kotlin", version.ref = "googleProtobufJava" }
+protobuf-lite = { module = "com.google.protobuf:protobuf-lite", version.ref = "protobufLite" }
+retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
+secrets-gradle-plugin = { module = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin:secrets-gradle-plugin", version.ref = "secretsGradlePlugin" }
+play-services-places = { group = "com.google.android.gms", name = "play-services-places", version.ref = "playServicesPlaces" }
+places = { group = "com.google.android.libraries.places", name = "places", version.ref = "places" }
+androidx-material3-android = { group = "androidx.compose.material3", name = "material3-android", version.ref = "material3Android" }
+androidx-recyclerview = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerview" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+

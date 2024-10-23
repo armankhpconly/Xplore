@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784068345644",
+    "project_id": "xplore-b39b4",
+    "storage_bucket": "xplore-b39b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784068345644:android:55c82722fbf94107857689",
+        "android_client_info": {
+          "package_name": "com.example.xplore"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoUAMWkL0Hy4B8AN6mBJRdX8AbuxLyTpE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

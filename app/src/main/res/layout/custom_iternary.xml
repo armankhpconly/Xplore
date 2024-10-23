@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Customiternary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/formLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Xplore"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:letterSpacing="0.5"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI Itinerary"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your start date and end date for your trip. AI will create the best possible itinerary for you."
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:id="@+id/startDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/startDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select Date"
+                android:textColor="@color/white"
+                android:textColorHint="#80FFFFFF"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/endDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/endDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Select End Date"
+                android:textColor="@color/white"
+                android:textColorHint="#80FFFFFF"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/categoriesLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Categories (at least 1)"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <GridLayout
+                android:id="@+id/categoriesGrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <CheckBox
+                    android:id="@+id/categoryHistorical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Historical"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:tag="tourist_attraction IN Mumbai (historical OR heritage OR monument OR UNESCO)" />
+
+                <CheckBox
+                    android:id="@+id/categoryArts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Arts"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:tag="movie_theater OR art_gallery OR museum) IN Mumbai (theater OR cinema OR multiplex OR 'art gallery' OR exhibition OR 'art museum' OR performance OR 'live music')" />
+
+                <CheckBox
+                    android:id="@+id/categoryShopping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shopping"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:tag="(shopping_mall OR clothing_store OR shoe_store OR department_store OR jewelry_store OR electronics_store) IN Mumbai (shopping OR mall OR market OR 'street shopping' OR fashion)" />
+
+                <CheckBox
+                    android:id="@+id/categoryBeaches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beaches"
+                    android:textColor="@color/white"
+                    android:padding="12dp"
+                    android:tag="tourist_attraction OR beach OR park) IN Mumbai (beach OR seaface OR coast OR promenade OR walkway OR waterfront OR 'sea view' OR chowpatty)" />
+            </GridLayout>
+
+            <Button
+                android:id="@+id/createItineraryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create Itinerary"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:padding="12dp" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itineraryRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

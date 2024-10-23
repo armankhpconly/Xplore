@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".ItineraryActivity">
+
+    <!-- Destination name -->
+    <TextView
+        android:id="@+id/destinationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_margin="16dp" />
+
+    <!-- ViewPager for images -->
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/destinationName"
+        android:layout_marginTop="8dp" />
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/viewPager">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <!-- Map fragment -->
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="Directions"
+        android:letterSpacing="0.3"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_margin="16dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cardmap"
+            android:layout_below="@+id/tag"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="20dp">
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/map"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/tag"
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+        </androidx.cardview.widget.CardView>
+
+
+    <!-- Directions RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/directionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/travelModesRadioGroup"
+        android:layout_marginTop="16dp"
+        android:padding="8dp" />
+
+    <!-- Travel Modes RadioGroup -->
+    <RadioGroup
+        android:id="@+id/travelModesRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/cardmap"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"> <!-- Center horizontally -->
+
+        <RadioButton
+            android:id="@+id/radioButtonWalk"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Walking" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="bicycling" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBusTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+
+            android:text="Transit" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBike"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Bike" />
+
+    </RadioGroup>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>

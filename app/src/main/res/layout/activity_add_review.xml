@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xplore"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="38sp"
+            android:letterSpacing="0.5"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/add_review_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_bar"
+        android:layout_marginTop="16dp"
+        android:text="Add Your Review"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/placeNameInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/add_review_title"
+            android:layout_marginTop="24dp"
+            android:hint="Place Name"
+            app:boxStrokeColor="@color/box_stroke_color"
+            app:hintTextColor="@color/white"
+            style="@style/addreview">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/placeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="text"
+            app:hintTextColor="@color/white"
+            style="@style/addreview" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/reviewInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/placeNameInputLayout"
+        android:layout_marginTop="16dp"
+        android:hint="Your Review"
+        app:boxStrokeColor="@color/box_stroke_color"
+        app:hintTextColor="@color/white"
+        style="@style/addreview">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/reviewEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:gravity="top|start"
+            style="@style/addreview"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/postButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:text="Post Review"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/white"
+        app:cornerRadius="28dp"
+        app:icon="@drawable/ic_post_review"
+        app:iconGravity="textStart"
+        app:iconTint="@color/black"
+        app:iconPadding="8dp" />
+
+</RelativeLayout>
