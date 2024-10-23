@@ -17,7 +17,7 @@ class AddReviewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAddReviewBinding
     private lateinit var firestore: FirebaseFirestore
     private lateinit var nlpService: RetrofitService.GoogleNLPService
-    private val apiKey = "AIzaSyAhl5BCuPNuPxM5Tye_NODGPj0sIghdyu8"
+    private val apiKey = BuildConfig.Sentiment
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

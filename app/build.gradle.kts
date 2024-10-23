@@ -24,6 +24,8 @@ android {
         val properties = Properties()
         properties.load(project.rootProject.file("local.properties").inputStream())
         buildConfigField("String", "MapsAPI", properties.getProperty("Maps"))
+        buildConfigField("String", "Sentiment", properties.getProperty("Sentiment"))
+
 
 
     }
