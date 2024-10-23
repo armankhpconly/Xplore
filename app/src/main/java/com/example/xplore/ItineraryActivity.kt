@@ -263,7 +263,7 @@ class ItineraryActivity : AppCompatActivity(), OnMapReadyCallback {
     }
 
     companion object {
-        private const val API_KEY = "AIzaSyA2d9jCLU5jKFBp3-7o9O-MwvUwHzUAtos"
+        private const val API_KEY = BuildConfig.MapsAPI
         private const val REQUEST_LOCATION_PERMISSION = 1001
     }
 }

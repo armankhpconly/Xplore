@@ -8,9 +8,10 @@ import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.google.firebase.BuildConfig
 import java.text.SimpleDateFormat
 import java.util.*
-private const val API_KEY = "AIzaSyA2d9jCLU5jKFBp3-7o9O-MwvUwHzUAtos" // Replace with your Google API Key
+private const val API_KEY = com.example.xplore.BuildConfig.MapsAPI
 
 public interface OnItemClickListener {
     fun onItemClick(placeId: String)

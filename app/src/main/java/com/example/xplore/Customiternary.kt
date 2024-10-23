@@ -27,7 +27,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.text.SimpleDateFormat
 import java.util.*
 
-private const val API_KEY = "AIzaSyA2d9jCLU5jKFBp3-7o9O-MwvUwHzUAtos" // Replace with your Google API Key
+private const val API_KEY = BuildConfig.MapsAPI
 private const val LOCATION_PERMISSION_REQUEST_CODE = 1
 
 class Customiternary : Fragment(),OnItemClickListener {

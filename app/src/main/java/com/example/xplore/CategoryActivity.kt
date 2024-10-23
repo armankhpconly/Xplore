@@ -90,7 +90,7 @@ class CategoryActivity : AppCompatActivity() {
             currentLocation = location
             if (location != null) {
                 val locationString = "${location.latitude},${location.longitude}"
-                RetrofitClient.retrofitService.getNearbyPlacesByCategory(category, locationString, 5000,"AIzaSyA2d9jCLU5jKFBp3-7o9O-MwvUwHzUAtos")
+                RetrofitClient.retrofitService.getNearbyPlacesByCategory(category, locationString, 5000,BuildConfig.MapsAPI)
                     .enqueue(object : Callback<PlacesResponse> {
                         override fun onResponse(call: Call<PlacesResponse>, response: Response<PlacesResponse>) {
                             if (response.isSuccessful) {
@@ -126,6 +126,6 @@ class CategoryActivity : AppCompatActivity() {
 
     companion object {
         private const val LOCATION_PERMISSION_REQUEST_CODE = 100
-        private const val API_KEY = "AIzaSyA2d9jCLU5jKFBp3-7o9O-MwvUwHzUAtos"
+        private const val API_KEY = BuildConfig.MapsAPI
     }
 }

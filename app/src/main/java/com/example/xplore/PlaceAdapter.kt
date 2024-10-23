@@ -41,7 +41,7 @@ class PlaceAdapter(private val onPlaceClick: (Place) -> Unit) : RecyclerView.Ada
             nameTextView.text = place.name
             descriptionTextView.text = place.vicinity
             Glide.with(itemView.context).load(place.photos?.firstOrNull()?.photoReference?.let { photoReference ->
-                "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=$photoReference&key=AIzaSyA2d9jCLU5jKFBp3-7o9O-MwvUwHzUAtos"
+                "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference=$photoReference&key=${BuildConfig.MapsAPI}"
             }).into(imageView)
 
             itemView.setOnClickListener {
