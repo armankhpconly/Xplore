@@ -17,10 +17,10 @@ Xplore is an Android application built to provide a smooth and clean travel-expl
 
 ## Tech Stack
 
-- **Language:** Java / Kotlin (based on project code)
+- **Language:** Kotlin 
 - **UI:** XML layouts, Material Components
 - **Architecture:** Beginner-friendly, MVVM-ready structure
-- **Libraries:** Glide / Coil (if used)
+- **Libraries:** Glide 
 - **Build System:** Gradle
 - **Version Control:** Git & GitHub
 
